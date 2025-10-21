@@ -1,5 +1,7 @@
 package ru.oop.task3;
 
+import java.util.List;
+
 /**
  * Человек
  *
@@ -14,4 +16,9 @@ interface Person extends Positioned {
      * @param destination место назначения
      */
     void walk(Position destination);
+
+    /**
+     * Транспортные средства для передвижения с пересадками
+     */
+    List<Transport> getTransports();
 }
