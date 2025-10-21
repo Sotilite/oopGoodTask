@@ -29,7 +29,6 @@ public class MainTask3 {
      */
     public void moveTo(Person person, Position destination) {
         List<Transport> transports = person.getTransports();
-
         // Мое понимание: человек идет до транспорта, на нем едет до второго.
         // Если первый не доехал, то человек идет пешком до второго.
         // Доходит до второго, на нем едет до третьего и т.д.
@@ -39,6 +38,9 @@ public class MainTask3 {
             person.walk(currentTransport.getPosition());
             currentTransport.move(person, nextTransport.getPosition());
         }
+        Transport lastTransport = transports.getLast();
+        person.walk(lastTransport.getPosition());
+        lastTransport.move(person, destination);
         person.walk(destination);
         assert person.getPosition() == destination;
     }
