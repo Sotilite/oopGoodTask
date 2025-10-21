@@ -6,7 +6,7 @@ package ru.oop.task2;
 public class Transport {
 
     /**
-     * Текущее местоположение транспорта
+     * Точка отправления транспорта
      */
     public Position getPosition() {
         //TODO
