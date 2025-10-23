@@ -27,8 +27,7 @@ public class MainTask3 {
      * @see Person
      * @see Position
      */
-    public void moveTo(Person person, Position destination) {
-        List<Transport> transports = person.getTransports();
+    public void moveTo(Person person, List<Transport> transports, Position destination) {
         // Мое понимание: человек идет до транспорта, на нем едет до второго.
         // Если первый не доехал, то человек идет пешком до второго.
         // Доходит до второго, на нем едет до третьего и т.д.

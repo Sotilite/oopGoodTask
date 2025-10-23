@@ -29,8 +29,7 @@ public class MainTask2 {
      * @see Person
      * @see Position
      */
-    public void moveTo(Person person, Position destination) {
-        Transport transport = person.getTransport();
+    public void moveTo(Person person, Transport transport, Position destination) {
         Position transportPosition = transport.getPosition();
         person.walk(transportPosition);
         transport.move(person, destination);
