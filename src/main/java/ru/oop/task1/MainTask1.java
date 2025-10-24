@@ -20,6 +20,8 @@ public class MainTask1 {
 
     /**
      * Переехать из текущего места в заданную точку
+     * @param person человек
+     * @param destination пункт назначения
      */
     public void moveTo(Person person, Position destination) {
         Car car = new Car();

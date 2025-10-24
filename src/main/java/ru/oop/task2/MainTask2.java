@@ -26,10 +26,11 @@ public class MainTask2 {
     /**
      * Переехать из текущего места в заданную точку
      * на любом транспорте
-     * @see Person
-     * @see Position
+     * @param person человек
+     * @param destination пункт назначения
+     * @param transport транспорт для передвижения
      */
-    public void moveTo(Person person, Transport transport, Position destination) {
+    public void moveTo(Person person, Position destination, Transport transport) {
         Position transportPosition = transport.getPosition();
         person.walk(transportPosition);
         transport.move(person, destination);

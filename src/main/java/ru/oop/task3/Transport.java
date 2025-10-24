@@ -3,11 +3,9 @@ package ru.oop.task3;
 /**
  * Транспорт для передвижения из точки отправления до места назначения
  */
-public class Transport {
+public class Transport implements Positioned {
 
-    /**
-     * Точка отправления транспорта
-     */
+    @Override
     public Position getPosition() {
         //TODO
         return null;

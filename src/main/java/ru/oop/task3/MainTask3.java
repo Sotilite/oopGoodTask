@@ -24,10 +24,11 @@ public class MainTask3 {
     /**
      * Переехать из текущего места в заданную точку
      * на любом транспорте
-     * @see Person
-     * @see Position
+     * @param person человек
+     * @param destination пункт назначения
+     * @param transports набор транспорта для передвижения
      */
-    public void moveTo(Person person, List<Transport> transports, Position destination) {
+    public void moveTo(Person person, Position destination, List<Transport> transports) {
         // Мое понимание: человек идет до транспорта, на нем едет до второго.
         // Если первый не доехал, то человек идет пешком до второго.
         // Доходит до второго, на нем едет до третьего и т.д.
