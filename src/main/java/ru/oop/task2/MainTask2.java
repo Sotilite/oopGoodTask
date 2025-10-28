@@ -31,8 +31,7 @@ public class MainTask2 {
      * @param transport транспорт для передвижения
      */
     public void moveTo(Person person, Position destination, Transport transport) {
-        Position transportPosition = transport.getPosition();
-        person.walk(transportPosition);
+        person.walk(transport.getPosition());
         transport.move(person, destination);
         person.walk(destination);
         assert person.getPosition() == destination;

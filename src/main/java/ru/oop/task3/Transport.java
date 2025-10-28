@@ -3,18 +3,10 @@ package ru.oop.task3;
 /**
  * Транспорт для передвижения из точки отправления до места назначения
  */
-public class Transport implements Positioned {
-
-    @Override
-    public Position getPosition() {
-        //TODO
-        return null;
-    }
+public interface Transport extends Positioned {
 
     /**
      * Добраться до нужного места, может не доехать до пункта назначения
      */
-    public void move(Person person, Position position) {
-        //TODO
-    }
+    public void move(Person person, Position position);
 }
