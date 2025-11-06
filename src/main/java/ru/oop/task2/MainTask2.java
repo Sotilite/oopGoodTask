@@ -26,8 +26,14 @@ public class MainTask2 {
     /**
      * Переехать из текущего места в заданную точку
      * на любом транспорте
-     * @see Person
-     * @see Position
+     * @param person человек
+     * @param destination пункт назначения
+     * @param transport транспорт для передвижения
      */
-    // TODO реализовать метод moveTo(...)
+    public void moveTo(Person person, Position destination, Transport transport) {
+        person.walk(transport.getPosition());
+        transport.move(person, destination);
+        person.walk(destination);
+        assert person.getPosition() == destination;
+    }
 }

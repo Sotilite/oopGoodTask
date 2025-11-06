@@ -1,5 +1,7 @@
 package ru.oop.task3;
 
+import java.util.List;
+
 /**
  * Человек
  *

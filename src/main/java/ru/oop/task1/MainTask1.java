@@ -20,9 +20,13 @@ public class MainTask1 {
 
     /**
      * Переехать из текущего места в заданную точку
+     * @param person человек
+     * @param destination пункт назначения
      */
     public void moveTo(Person person, Position destination) {
-        // TODO
+        Car car = new Car();
+        car.move(person, destination);
+        person.walk(destination);
         assert person.getPosition() == destination;
     }
 }
